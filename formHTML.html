@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài học Form HTML</title>
+</head>
+<body>
+<h3>Form Methoh Get</h3>
+<form action="https://www.youtube.com/results" methoh="Get">
+    <input type="text" placeholder="Tìm kiếm" name="search_query">
+    <button>Submit</button>
+    <!--
+    Method Get: Dữ liệu sẽ được hiện thị trên thanh đường dẫn (thường dành cho việc tìm kiếm dữ liệu)
+    Dữ liệu gửi lên sẽ bị giới hạn
+
+    Action: quy định nơi gửi đến của dữ liệu (là 1 đường link)
+
+    "name" sẽ quy định key đại diện cho dữ liệu được truyền lên
+    ví dụ nhập "アジサイ" vào ô input trên server ttps://www.youtube.com/ ,
+    sẽ nhận được key=value là "search_query=アジサイ"
+    -->
+</form>
+<hr>
+<h3>Form Methoh Post</h3>
+<form method="post" action="https://formtester.goodbytes.be/post.php">
+    <input type="text" placeholder="tên lớp" name=nameclass">
+    <button>Submit</button>
+
+    <br>
+    <form method="post" action="https://formtester.goodbytes.be/post.php">
+        <input type="text" placeholder="họ và tên" name="fullname">
+        <button>Submit</button>
+    </form>
+    <!--
+    Methoh Post: dữ liệu được nằm trong 1 bộ nhớ và gửi lên server(bảo mật, lớn)
+
+    Action: quy định nơi gửi đến của dữ liệu (là 1 đường link)
+    -->
+</form>
+
+<hr>
+<h3>Các dạng input</h3>
+<input type="text" placeholder="nhập chữ cái">
+<textarea placeholder="textarea"></textarea>
+<input type="number" placeholder="nhập chữ số">
+<input type="password" placeholder="password">
+<input type="file">
+<br>
+<p>Chọn nhiều</p>
+<input type="checkbox"> 1
+<input type="checkbox"> 2
+<input type="checkbox"> 3
+<input type="checkbox"> 4
+
+<p>Chọn một ví dụ chọn giới tính</p>
+<input type="radio" name="gender"> nam
+<input type="radio" name="gender"> nữ
+<input type="radio" name="gender"> khác
+
+<p>select option</p>
+<select name="" id="">
+<option value="v1">option 1</option>
+<option value="v2">option 2</option>
+<option value="v3">option 3</option>
+</select>
+
+<!--input type button với thẻ button là giống nhau-->
+<input type="button" value="Submit">
+<button>Submit</button>
+
+<input type="hidden">
+
+<hr>
+
+<h3>Table in HTML</h3>
+<!--
+Table dùng để khai báo bảng
+thẻ "tr" phải nằm trong table mới hoạt động
+"tr" khai báo hàng
+"th" khai báo ô tiêu đề trong hàng đó
+"td" khai báo ô dữ liệu
+phím <tên thẻ>* số lượng + tab: tạo nhanh 3 thẻ
+-->
+
+<table border="1">
+    <tr>
+        <th>#</th>
+        <th>Ngày</th>
+        <th>Giảng viên</th>
+        <th>Môn học</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>26/5/2026</td>
+        <td>Mr Linh</td>
+        <td>Lập trình</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>26/5/2026</td>
+        <td>Mr Linh</td>
+        <td>Lập trình</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>26/5/2026</td>
+        <td>Mr Linh</td>
+        <td>Lập trình</td>
+    </tr>
+</table>
+<hr>
+<!--
+Để sử dụng gộp hàng: rowspan trong "td"
+Để sử dụng gộp ô: colspan trong th hoặc td
+-->
+<table border="1">
+    <tr>
+        <td>col 1</td>
+        <td>col 2</td>
+        <td>col 3</td>
+    </tr>
+    <tr>
+        <td rowspan="2">A</td>
+        <td>B1</td>
+        <td>C2</td>
+    </tr>
+    <tr>
+        <td>B2</td>
+        <td>C2</td>
+    </tr>
+    <tr>
+        <td colspan="3">D</td>
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>
